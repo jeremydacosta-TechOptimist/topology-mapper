@@ -1,0 +1,95 @@
+core-sw#show lldp neighbors detail
+------------------------------------------------
+Local Intf: GigabitEthernet1/0/1
+Chassis id: 0011.2233.4401
+Port id: GigabitEthernet1/0/1
+Port Description: uplink to floor1-sw.lab.example
+System Name: floor1-sw
+System Description: Cisco IOS Software, C2960 Software (C2960-LANBASEK9-M), Version 15.2(7)E7
+Time remaining: 103 seconds
+System Capabilities: B,R
+Enabled Capabilities: B,R
+Management Addresses:
+    IP: 192.0.2.11
+Auto Negotiation - supported, enabled
+Physical media capabilities:
+    1000baseT(FD)
+------------------------------------------------
+Local Intf: GigabitEthernet1/0/2
+Chassis id: 0011.2233.4402
+Port id: GigabitEthernet1/0/1
+Port Description: uplink to floor2-sw.lab.example
+System Name: floor2-sw
+System Description: Cisco IOS Software, C2960 Software (C2960-LANBASEK9-M), Version 15.2(7)E7
+Time remaining: 91 seconds
+System Capabilities: B,R
+Enabled Capabilities: B,R
+Management Addresses:
+    IP: 192.0.2.12
+Auto Negotiation - supported, enabled
+Physical media capabilities:
+    1000baseT(FD)
+------------------------------------------------
+Local Intf: GigabitEthernet1/0/3
+Chassis id: 0011.2233.4404
+Port id: GigabitEthernet0/0
+Port Description: uplink to edge-rtr.lab.example
+System Name: edge-rtr
+System Description: Cisco IOS Software, ISR Software (X86_64_LINUX_IOSD-UNIVERSALK9-M), Version 15.7(3)M
+Time remaining: 117 seconds
+System Capabilities: B,R
+Enabled Capabilities: B,R
+Management Addresses:
+    IP: 192.0.2.254
+Auto Negotiation - supported, enabled
+Physical media capabilities:
+    1000baseT(FD)
+------------------------------------------------
+Local Intf: GigabitEthernet1/0/4
+Chassis id: 0011.2233.44F1
+Port id: Ethernet0/1
+Port Description: uplink to fw1.lab.example
+System Name: fw1
+System Description: Cisco ASA Software Version 9.16(4)
+Time remaining: 120 seconds
+System Capabilities: B
+Enabled Capabilities: B
+Management Addresses:
+    IP: 192.0.2.200
+Auto Negotiation - supported, enabled
+Physical media capabilities:
+    1000baseT(FD)
+
+core-sw#show cdp neighbors detail
+-------------------------
+Device ID: floor1-sw
+Entry address(es):
+  IP address: 192.0.2.11
+Platform: cisco WS-C2960-24TT-L,  Capabilities: Switch IGMP
+Interface: GigabitEthernet1/0/1,  Port ID (outgoing port): GigabitEthernet1/0/1
+Holdtime : 152 sec
+
+Version :
+Cisco IOS Software, C2960 Software (C2960-LANBASEK9-M), Version 15.2(7)E7
+Copyright (c) 1986-2021 by Cisco Systems, Inc.
+
+advertisement version: 2
+VTP Management Domain: ''
+Native VLAN: 1
+Duplex: full
+-------------------------
+Device ID: floor2-sw
+Entry address(es):
+  IP address: 192.0.2.12
+Platform: cisco WS-C2960-24TT-L,  Capabilities: Switch IGMP
+Interface: GigabitEthernet1/0/2,  Port ID (outgoing port): GigabitEthernet1/0/1
+Holdtime : 178 sec
+
+Version :
+Cisco IOS Software, C2960 Software (C2960-LANBASEK9-M), Version 15.2(7)E7
+Copyright (c) 1986-2021 by Cisco Systems, Inc.
+
+advertisement version: 2
+VTP Management Domain: ''
+Native VLAN: 1
+Duplex: full

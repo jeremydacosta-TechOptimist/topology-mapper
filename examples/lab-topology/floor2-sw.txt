@@ -1,0 +1,34 @@
+floor2-sw#show lldp neighbors detail
+------------------------------------------------
+Local Intf: GigabitEthernet1/0/1
+Chassis id: 0011.2233.44A0
+Port id: GigabitEthernet1/0/2
+Port Description: uplink to core-sw.lab.example
+System Name: core-sw
+System Description: Cisco IOS Software, C3560 Software (C3560-IPSERVICESK9-M), Version 15.0(2)SE11
+Time remaining: 74 seconds
+System Capabilities: B,R
+Enabled Capabilities: B,R
+Management Addresses:
+    IP: 192.0.2.1
+Auto Negotiation - supported, enabled
+Physical media capabilities:
+    1000baseT(FD)
+
+floor2-sw#show cdp neighbors detail
+-------------------------
+Device ID: core-sw
+Entry address(es):
+  IP address: 192.0.2.1
+Platform: cisco WS-C3560-24TS,  Capabilities: Switch IGMP
+Interface: GigabitEthernet1/0/1,  Port ID (outgoing port): GigabitEthernet1/0/2
+Holdtime : 132 sec
+
+Version :
+Cisco IOS Software, C3560 Software (C3560-IPSERVICESK9-M), Version 15.0(2)SE11
+Copyright (c) 1986-2021 by Cisco Systems, Inc.
+
+advertisement version: 2
+VTP Management Domain: ''
+Native VLAN: 1
+Duplex: full

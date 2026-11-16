@@ -1,0 +1,8 @@
+{
+  "devices": [
+    {"name": "core-sw", "role": "core", "mgmt_ip": "192.0.2.1"},
+    {"name": "floor1-sw", "role": "access", "mgmt_ip": "192.0.2.11"},
+    {"name": "floor2-sw", "role": "access", "mgmt_ip": "192.0.2.12"},
+    {"name": "edge-rtr", "role": "edge", "mgmt_ip": "192.0.2.254"}
+  ]
+}
