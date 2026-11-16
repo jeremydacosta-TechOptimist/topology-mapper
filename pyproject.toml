@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "topology-mapper"
+version = "1.0.0"
+description = "Build a topology graph from LLDP/CDP neighbor dumps, flag operational risks and export Mermaid, Graphviz DOT, JSON and standalone HTML maps."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+  { name = "Jeremy da Costa", email = "357285436+jeremydacosta-TechOptimist@users.noreply.github.com" },
+]
+keywords = ["network", "topology", "lldp", "cdp", "graph", "mermaid", "graphviz", "svg", "cli"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Environment :: Console",
+  "Topic :: System :: Networking",
+  "Topic :: System :: Systems Administration",
+]
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=7"]
+
+[project.scripts]
+topomapper = "topomapper.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/jeremydacosta-TechOptimist/topology-mapper"
+Issues = "https://github.com/jeremydacosta-TechOptimist/topology-mapper/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
